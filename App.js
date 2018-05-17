@@ -6,8 +6,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Text>I am editing this app</Text>
-        <Text>I got the project running with expo</Text>
-        <Text>Is this a POC?</Text>
+        {/* <Button>Test</Button> */}
       </View>
     );
   }
