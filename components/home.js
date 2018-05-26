@@ -17,10 +17,32 @@ export default class Home extends Component {
   render() {
     return (
       <View >
-        <Text>{ this.state.val }</Text>
+        <Text style={styles.title}>React and React Native</Text>
+        <Text style={styles.subtitle}> A Guide to Get Your First Application Up</Text>
+        <Text style={styles.title}>{ this.state.val }</Text>
         <Button onPress={() => this.handlePress()}>Press Me!</Button>
       </View>
     );
   }
 }
 
+const styles = StyleSheet.create({
+  title: {
+    color: 'blue',
+    fontWeight: 'bold',
+    fontSize: 35,
+    textAlign: 'center',
+    textAlignVertical: 'top',
+    marginTop: 50
+  },
+  subtitle: {
+    color: 'blue',
+    fontWeight: 'bold',
+    fontSize: 25,
+    textAlign: 'center',
+    textAlignVertical: 'top'
+  },
+  red: {
+    color: 'red',
+  },
+});
