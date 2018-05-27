@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { ScrollView, StyleSheet, Text, View,} from 'react-native';
 import Button from 'react-native-button';
 
-export default class Home extends Component {
+export default class getStarted extends Component {
     constructor() {
       super();
       this.state = {
