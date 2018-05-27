@@ -49,8 +49,7 @@ const style = StyleSheet.create({
     fontSize: 35,
     textAlign: 'center',
     textAlignVertical: 'top',
-    paddingBottom: 10,
-    paddingTop: 50
+    paddingBottom: 10, 
   },
   subtitle: {
     color: '#1B3409',

@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import { Text, StyleSheet, View } from 'react-native';
 import Home from './components/home';
+import { Router, Scene } from 'react-native-router-flux';
 
 export default class App extends Component {
 
   render() {
     return (
-      <View style = {style.container} >
-        <Home />
-      </View>
+      <Router>
+        <Scene style = {style.container} key="root">
+          <Scene key="home" component={Home} initial={true} />
+        </Scene>
+      </Router>
     ); 
   }
 }
@@ -16,7 +19,7 @@ export default class App extends Component {
 const style = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'blue',
     alignItems: 'center',
     justifyContent: 'center',
   },
