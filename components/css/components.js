@@ -25,9 +25,6 @@ import {StyleSheet} from 'react-native';
         paddingBottom: 100,
         paddingTop: 10
       },
-      gen: {
-        textAlign: 'center',
-      },
       buttons: {
          color: '#1B3409',
          fontSize: 30,
@@ -38,6 +35,10 @@ import {StyleSheet} from 'react-native';
         backgroundColor: '#1B3409',
         height: 3,
         width: 400
+      },
+      info: {
+
+       
       },
       footer: {
         textAlign: 'right',
