@@ -36,14 +36,18 @@ import {StyleSheet} from 'react-native';
         height: 3,
         width: 400
       },
-      info: {
-
-       
+      instructions: {
+        paddingTop: 10,
+        paddingBottom: 10,
+        textAlign: 'center'
       },
       footer: {
         textAlign: 'right',
         backgroundColor: '#1B3409',
         fontSize: 18
+      },
+      images: {
+        resizeMode: "cover",
       }
  });
 
