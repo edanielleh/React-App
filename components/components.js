@@ -10,13 +10,19 @@ export default class Components extends Component {
   constructor() {
     super();
     this.state = {
-      info1: false
+      info1: false,
+      info2: false
     };
   }
   info1() {
     this.setState({
       info1: !this.state.info1
     });
+  };
+    info2() {
+      this.setState({
+        info2: !this.state.info2
+      });
   };
   render() {
     return (
@@ -44,6 +50,21 @@ export default class Components extends Component {
           <Text  style={style.instructions}>import {"{ Text, View }"} from 'react-native';</Text>
           <Text  style={style.instructions}>Then create a class called Home and have it extend Component. Set Home as the default export. Inside the Component creaete a render function. Then we return one "master" element to render. Create a {"<View>"}  tag and inside that create a {"<Text>"} tag with your own message.
           </Text>
+          <Icon name = "info" size = {50} onPress={() => this.info1()}/>
+        { this.state.info2 ? 
+        <View>
+          <Text>JSX is not used in React-Native</Text> 
+        </View>
+        : null }
+        <Image style = {style.images}
+          source={require('../images/components/homejs.png')}
+          />
+          <Text style={style.instructions}>Now import home.js in your App.js file. Add a {'<Sceen>'} tag and set key equal to home, component = {'{Home},'} and initial = {'{true}'} to set it as the default.
+          </Text>
+          <Image style = {style.images}
+          source={require('../images/components/appjs2nd.png')}
+          />
+          <Text style={style.instructions}>This will render the text "Home Page" on the top left corner by default.</Text>
         </ScrollView>
         <Text style={style.footer}> created by Danielle Howard</Text>
       </View>
